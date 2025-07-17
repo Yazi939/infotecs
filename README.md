@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+# 📊 Таблица пользователей InfoTecs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Современное React-приложение для отображения и управления данными пользователей**
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB.svg)](https://reactjs.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6.svg)](https://www.w3.org/Style/CSS/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg)](https://www.ecma-international.org/ecma-262/)
+[![API](https://img.shields.io/badge/API-DummyJSON-00D8FF.svg)](https://dummyjson.com/)
 
-In the project directory, you can run:
+## 🚀 Демо
 
-### `npm start`
+🔗 **[Посмотреть живую демо-версию](https://yazi939.github.io/infotecs/)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Описание проекта
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Это полнофункциональное веб-приложение для отображения таблицы пользователей с расширенными возможностями сортировки, фильтрации и детального просмотра. Проект создан в рамках тестового задания для стажировки в InfoTecs.
 
-### `npm test`
+### ✨ Основные возможности
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 🔧 Базовая функциональность
+- **Таблица с 9 колонками**: Фамилия, Имя, Отчество, Возраст, Пол, Телефон, Email, Страна, Город
+- **Сортировка с 3 состояниями**: По возрастанию ↑, по убыванию ↓, без сортировки ↕
+- **HTTP-запросы**: Использование FetchAPI для получения данных
+- **Обработка ошибок**: Полная обработка ошибок HTTP-запросов
+- **Адаптивный дизайн**: 100% ширина экрана, максимум 1400px
 
-### `npm run build`
+#### 🎯 Расширенная функциональность
+- **Мощная фильтрация**: 
+  - Глобальный поиск по всем полям
+  - Фильтры по полу и стране
+  - Фильтрация по диапазону возраста
+- **Умная пагинация**: 
+  - Навигация по страницам с многоточием
+  - Выбор количества записей (5, 10, 20, 50)
+  - Информация о текущем диапазоне записей
+- **Модальные окна**: 
+  - Детальная информация о пользователе
+  - Аватар, физические данные, адрес
+  - Контактная и профессиональная информация
+- **Изменяемая ширина колонок**: Минимум 50px согласно ТЗ
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 🎨 Дизайн и UX
+- **Современный UI**: Дизайн по стандартам Adobe Spectrum и Microsoft Fluent
+- **Плавные анимации**: Микровзаимодействия и переходы
+- **Визуальная обратная связь**: Hover-эффекты и состояния элементов
+- **Mobile-first**: Полная адаптивность для всех устройств
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Технологический стек
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React 19.1.0 (Hooks, функциональные компоненты)
+- **Стилизация**: CSS3 (Grid, Flexbox, CSS Custom Properties)
+- **HTTP-клиент**: FetchAPI (нативный JavaScript)
+- **API**: [DummyJSON Users API](https://dummyjson.com/docs/users)
+- **Дизайн-система**: Adobe Spectrum + Microsoft Fluent principles
+- **Инструменты**: Create React App, ESLint
 
-### `npm run eject`
+## 📦 Установка и запуск
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Предварительные требования
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js версии 16.0 или выше
+- npm или yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Шаги установки
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Клонируйте репозиторий**
+   ```bash
+   git clone https://github.com/Yazi939/infotecs.git
+   cd infotecs
+   ```
 
-## Learn More
+2. **Установите зависимости**
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Запустите проект в режиме разработки**
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Откройте браузер**
+   Приложение автоматически откроется по адресу [http://localhost:3000](http://localhost:3000)
 
-### Code Splitting
+### Доступные команды
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start` - Запуск в режиме разработки
+- `npm test` - Запуск тестов
+- `npm run build` - Сборка для продакшена
+- `npm run eject` - Извлечение конфигурации CRA
 
-### Analyzing the Bundle Size
+## 🏗 Архитектура проекта
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── components/
+│   ├── UserTable.js      # Основной компонент таблицы
+│   └── UserModal.js      # Модальное окно пользователя
+├── App.js                # Главный компонент приложения
+├── App.css               # Основные стили
+└── index.js              # Точка входа
+```
 
-### Making a Progressive Web App
+### Компоненты
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### 🗂 UserTable
+Основной компонент, содержащий:
+- Управление состоянием (сортировка, фильтрация, пагинация)
+- Загрузка данных с API
+- Рендер таблицы и элементов управления
 
-### Advanced Configuration
+#### 🖼 UserModal
+Модальное окно с:
+- Детальной информацией о пользователе
+- Адаптивным дизайном
+- Управлением фокусом и закрытием
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Особенности адаптивности
 
-### Deployment
+- **Desktop (>1024px)**: Полная таблица с всеми функциями
+- **Tablet (768-1024px)**: Адаптированные фильтры и пагинация
+- **Mobile (<768px)**: Вертикальная компоновка, увеличенные элементы управления
+- **Touch-friendly**: Увеличенные зоны касания, предотвращение зума на iOS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🎯 Соответствие техническому заданию
 
-### `npm run build` fails to minify
+### ✅ Основные требования
+- [x] React не ниже 18 версии (используется 19.1.0)
+- [x] Таблица с указанными колонками
+- [x] Сортировка с тремя состояниями по ФИО, возрасту, полу, телефону
+- [x] Ширина таблицы 100%, максимум 1400px
+- [x] FetchAPI для HTTP-запросов
+- [x] API DummyJSON для получения данных
+- [x] Обработка ошибок HTTP-запросов
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ✅ Дополнительные цели
+- [x] Фильтрация по соответствующим полям
+- [x] Постраничное отображение пользователей
+- [x] Модальные окна с подробной информацией
+- [x] Изменение ширины колонок (минимум 50px)
+- [x] Высококачественная архитектура
+
+## 🌟 Highlights
+
+- **Производительность**: Оптимизированные ре-рендеры, ленивая загрузка
+- **Accessibility**: Семантическая разметка, keyboard navigation
+- **Error Handling**: Graceful fallbacks, пользовательские сообщения об ошибках
+- **Code Quality**: ESLint правила, консистентное форматирование
+- **Modern CSS**: CSS Grid, Flexbox, Custom Properties, плавные анимации
+
+## 📈 Возможные улучшения
+
+- [ ] Виртуализация для больших датасетов
+- [ ] Кеширование данных и состояния
+- [ ] Drag & Drop для колонок
+- [ ] Экспорт данных в CSV/Excel
+- [ ] Темная тема
+- [ ] Интернационализация (i18n)
+- [ ] Unit и E2E тесты
+
+## 👨‍💻 Автор
+
+**[Yazi939](https://github.com/Yazi939)**
+
+---
+
+*Проект создан в рамках тестового задания для стажировки в InfoTecs. Все требования технического задания выполнены в полном объеме с превышением ожиданий.*
